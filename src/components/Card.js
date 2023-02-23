@@ -34,7 +34,7 @@ class Card extends Component {
             <div className={styles.container}>
                 <img src={image} alt="smart phone" />
                 <h3>{name}</h3>
-                <p>{cost} {counter ? `${counter} = ${counter * Number(cost.split(" ")[0])} $` : "" } </p>
+                <p>{cost} {counter ? `* ${counter} = ${counter * Number(cost.split(" ")[0])} $` : "" } </p>
 
                 <div className={styles.counter}>
                     <img className={!counter && styles.deactive} src={down} alt="arrow" onClick={this.downHandler} />
