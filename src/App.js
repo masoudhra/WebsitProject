@@ -6,6 +6,7 @@ import Landing from "./components/Landing";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
+import DetailsPage from "./components/DetailsPage";
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
                 <Routes>
                     <Route path="/" element={<Landing />} />
                     <Route path="/products" element={<Products />} />
+                    <Route path="/products/:id" element={<DetailsPage />} />
                     <Route path="/products/us" element={<AboutUs />} />
                 </Routes>
                 
